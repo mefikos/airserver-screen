@@ -2,14 +2,25 @@
 <html>
 <head>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: black; }
+        /* הגדרות איפוס למניעת שוליים לבנים או גלילה */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background-color: black; 
+        }
+
         .bg {
-            background-image: url('screen.png'); /* וודא שזה שם התמונה שהעלית מקודם */
+            background-image: url('screen.png');
             height: 100vh;
             width: 100vw;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover; /* המתיחה שמונעת שטח שחור */
+            
+            /* שינוי מ-cover ל-100% כדי למנוע חיתוך (Crop) ולמלא את כל המסך */
+            background-size: 100% 100%; 
         }
     </style>
 </head>
